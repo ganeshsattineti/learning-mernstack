@@ -1,0 +1,17 @@
+Return statement:
+-------------------
+ A return statement is used to exit a function or return a value in function call.
+ it return any type of value.
+ if no value is specified in the return statement the function returns undefined value.
+ //return statement
+ 
+ function fnReturn()
+{
+    return function f1(){
+        console.log(200);
+    }
+}
+var value=fnReturn();
+console.log(value);
+value();
+//f1();

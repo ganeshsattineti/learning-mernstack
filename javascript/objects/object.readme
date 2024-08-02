@@ -1,0 +1,36 @@
+objects in javascript:
+----------------------
+object is a collection of properties,where each property is defined as a key value pair.
+objects are stored and managed data.
+
+creating objects:
+----------------
+objects are creating 3 ways they 
+1,literal object
+2,
+3,
+
+1,literal object:
+-----------------
+most commonly way to create an object is using object literal.
+syntax:
+-------
+var object =
+{
+    key:value; //property
+
+}
+/*how to access specific value from the object
+using dot notation
+using sqaure brakets
+<object name>.<key name>;
+<object name>["key name"];*/
+
+/*hot to add new values in exited objects
+ using dot notation
+ using sqaure brakets
+ <object name>.<new key-name>=<new value>;
+ <object name>["new key-name"]=<new value>;*/
+
+
+

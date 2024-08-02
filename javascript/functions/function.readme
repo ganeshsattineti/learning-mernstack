@@ -1,0 +1,96 @@
+function in javascript
+-----------------------
+Functions : function is a block and where we can add instructions or statements 
+or code to perform some action is called function.
+using function you can reuse the code. 
+  
+  function creation
+  -----------------
+  // keyword and function name
+  
+  function <funName>() 
+  {
+
+   funtion scope;
+   }
+ funname(); //function calling
+ 
+  1, named functon
+  ---------------
+    A function is a function that has been declared with a name is called named finction.  
+   //named function
+   functon f1()
+   {
+    console.log("this is ganesh");
+   }
+   f1();
+
+2, anonymus function
+---------------------
+A function does not have any name is called anonymus funtion.
+//anonymus function
+function ()
+{
+    cosole.log("this is anonymus function");
+}
+
+3, functon expression
+----------------------
+A function is assigined to a variable is called function expression.
+//function expression
+var fun=function()
+{
+    console.log("this is function expression");
+}
+fun();
+
+4,arrow function
+----------------
+A function not use the functon keyword and directly starts with paranthesis, forword arrow and open the curly braceses.
+//arrow functon
+()=>
+{
+    console.log("this is arrow function");
+}
+
+5, callback function
+--------------------
+Any functon which is passed as a argument is called callback functions.
+//callback function
+functon fn(x)
+{
+x();
+}
+fn(function ()
+{
+    console.log("this is callback function");
+});
+
+6, higher order function 
+-------------------------
+ A function which takes another function as a argument is called higher order function.
+ //higher order function
+ functon fn(x)
+{
+x();
+}
+fn(function ()
+{
+    console.log("this is Higher order function");
+});
+
+7, parameter and argument function
+------------------------------------
+parameters are simple variables or reference variables with out scope statements.
+parameters are defined while functions defines with in the paranthesis.
+parameters are used to store or holds the data.
+//parameter functon
+functon f1(x,y)
+{
+var a =x;
+var b=y;
+ res = a+b;
+ console.log(res);
+}
+f1(10,20);
+
