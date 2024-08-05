@@ -1,0 +1,42 @@
+variables in javascript:
+------------------------
+variables: variables are stored in data that can be referenced and manipulated in a program
+js can holds different type of data such as numbers,strings,objects and more .
+
+variable declaration:
+---------------------
+var id; //variable declaration
+id=10;// variable assignment
+var id =10;//variable initalization
+
+variables are four types they are :
+-----------------------------------
+1 automatically
+2 var
+3 let
+4 const
+ 
+ 1, automatically:
+ ------------------
+ x=10;
+ y="string";
+ z=true;
+
+ 2,using var keyword:
+ --------------------
+  using var keyword it is a block scope it is allowed re-declaration with in the same scope.
+  var x=10;
+  var y="string";
+
+ 3,using let keyword:
+ ----------------------
+ using let keyword it is a block scope it is not allowed re-declaration with in the same scope.
+    let x=10;
+    //let x=10; cannpt be redeclared 
+
+ 4,using const keyword:
+ -----------------------
+ using const keyword it is not allowed with in same scope and must be initalized at same time.
+  const x; // this is an error
+  const x=10;   
+

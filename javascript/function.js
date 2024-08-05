@@ -29,6 +29,20 @@ function div()
  }
 div();
 
+//parameterised and argument function
+function funpa(a,b)
+{
+   var x=a;
+   var y=b;
+  var result =x+y;
+  console.log(result);
+}
+funpa(10,20);
+funpa(30,40);
+funpa(20,40);
+
+
+
 //anonymus function
 var ret = function()
  {
@@ -55,5 +69,29 @@ var arrow =()=>
  console.log(name);
   }
   arrow();
-  //higher order function
+  
+  //callback function
+ function funCall(x)
+ {
+   //console.log(x);
+   x();
+ }
+ funCall(function ()
+{
+   console.log("this is call back function");
+});
+
+//higher order function
+
+function funHof(a)
+{
+   a();
+
+}
+funHof(()=>{
+   console.log("this hof function");
+});
+
+
+
   

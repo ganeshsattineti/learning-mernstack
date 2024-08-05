@@ -1,0 +1,50 @@
+scope statement in javascript:
+------------------------------
+the scope of variable  where that variable can be accessed or referenced is kunow as cope statement.
+scope variables are three types they are:
+1,global scope
+2,function scope
+3, block scope
+
+1, global scope:
+----------------
+once a variable declares outside of the function or block that can be access any where in the world.
+//global variable:
+------------------
+var x =10;// global variable
+funtion f1(){
+
+    console.log(x);// output 10
+}
+f1();
+
+2, function scope:
+---------------------
+once a variable inside the function that variable access only inside of the function.
+
+ //function scope
+ -----------------
+ function f2()
+ {
+    var a = 30;
+    console.log(a);// accessible here
+ }
+ //console.log(a);//error throw variable anot declare
+ f2();
+
+3,block scope:
+--------------
+variables can declare with 'let' and 'const' with in a block. they can only be accessed with in that  block.
+//block scope
+function f3()
+{
+  if(10<20){
+   var y =10;
+   const x =10;
+   //console.log(x);
+  }
+  console.log(x);
+}
+f3();
+
+ 

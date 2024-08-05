@@ -17,7 +17,7 @@ using function you can reuse the code.
  
   1, named functon
   ---------------
-    A function is a function that has been declared with a name is called named finction.  
+    A function that has been declared with a name is called named finction.  
    //named function
    functon f1()
    {
@@ -38,10 +38,10 @@ function ()
 ----------------------
 A function is assigined to a variable is called function expression.
 //function expression
-var fun=function()
-{
-    console.log("this is function expression");
-}
+var fun = function()
+          {
+            console.log("this is function expression");
+           }
 fun();
 
 4,arrow function
@@ -55,7 +55,7 @@ A function not use the functon keyword and directly starts with paranthesis, for
 
 5, callback function
 --------------------
-Any functon which is passed as a argument is called callback functions.
+Any functon which is passed as an argument is called callback functions.
 //callback function
 functon fn(x)
 {
@@ -68,7 +68,7 @@ fn(function ()
 
 6, higher order function 
 -------------------------
- A function which takes another function as a argument is called higher order function.
+ A function which takes another function as an argument is called higher order function.
  //higher order function
  functon fn(x)
 {
@@ -93,4 +93,5 @@ var b=y;
  console.log(res);
 }
 f1(10,20);
-
+Arguments are actual data.
+arguments passing while function calling.
