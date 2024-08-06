@@ -39,3 +39,7 @@ console.log("includes method is used in checks the element in given array :",nam
 let cric=["raina","dhoni","sachin","kohli"];
 var cricName=cric.indexOf("sachin");
 console.log("indexOf method is used for return element position :",cricName );
+
+//lenght of the array
+var lengthOfArray=cric.length;
+console.log("length of the array:",lengthOfArray);
