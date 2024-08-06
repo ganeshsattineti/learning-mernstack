@@ -5,7 +5,7 @@ objects are stored and managed data.
 
 creating objects:
 ----------------
-objects are creating 3 ways they 
+objects are creating 3 ways they are:
 1,literal object
 2,
 3,
@@ -32,5 +32,39 @@ using sqaure brakets
  <object name>.<new key-name>=<new value>;
  <object name>["new key-name"]=<new value>;*/
 
+ 
+//Nested Objects:
+-----------------
+Nested objects are objects that contain objects as properties.
+this allows complex type of datastructures that allows intricate relatonships between data.
+
+var user={
+  name:{
+    firstName:"ganesh",
+    lastName:"sattineti"
+  },                         //nested objects  
+  address:{
+    city:"uppuluru";
+  }
+};
+console.log(user.name.firstName);
+console.log(user.name.address.city);
+
+//object functions:
+-------------------
+Object finctions are objects can have functions as aproperties.these functions are also called as methods.
+when they are defined within the objects. methods allow objects to perform actionsand can interact with
+the objects properties.
+
+//object functions:
+-------------------
+const person={
+    name:"ganesh",
+    age:23,
+    fn:function(){
+        console.log("this is object function");
+    }
+};
+person.fn();
 
 
