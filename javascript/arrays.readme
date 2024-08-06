@@ -1,0 +1,9 @@
+Arrays in js:
+-------------
+arrays are datastructers, it is used in stores and managing the data(same type and different type).
+
+create an array:
+----------------
+using literal notation like taking a variable and assign that variable to array.
+var user=[]
+
