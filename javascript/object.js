@@ -20,3 +20,20 @@ var product={
 
 }
 console.log(product);
+
+//access the data
+var prod = product.proName;
+var prob = product["proBrand"];
+console.log(prod);
+console.log(prob);
+
+// insert data
+product.id=101;
+console.log(product);
+//modify data
+product.id=201;
+console.log(product);
+//delete the data
+
+delete product.id;
+console.log(product);
