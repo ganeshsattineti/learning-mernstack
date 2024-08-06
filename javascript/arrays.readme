@@ -1,9 +1,82 @@
 Arrays in js:
 -------------
 arrays are datastructers, it is used in stores and managing the data(same type and different type).
+array datatype is always object.
 
 create an array:
 ----------------
 using literal notation like taking a variable and assign that variable to array.
-var user=[]
+var user=[ elements] //
+
+var user=["ganesh","suresh","mainkanta"];
+console.log(user);
+
+how to retrieve the data in arrays
+----------------------------------
+in array using index value to retrieve the elements.
+index elements always starts with '0'.
+
+var no=[101,102,103]
+         0   1   2
+elements are seperated with the comma operator(,).
+
+how to find the length of the array
+-----------------------------------
+using length keyword the length keyword is used to find the length of an array.
+var numberOfElements=<arrayname>.length;
+
+javacsript is providing predefinrd functions perform action on array:
+--------------------------------------------------------------------
+
+1, Add new element in the element in the array:
+----------------------------------------------
+ 1,push()//it is add one or more elements in the exixting array at end of an array.
+
+  //push():
+  ----------
+  let cricket=["sachin","virat","dhoni","yuvaraj"];
+  var newValue=cricket.push("raina");
+  console.log("push method is adding one or two element in end of the array",newValue);
+ 
+ 2,unshift()// it is  add one or more elements int the existing array at starting of the array.
+  //unshift():
+  -----------
+  let cricket=["sachin","virat","dhoni"];
+  var adding=cricket.unshift("raina");
+  console.log(adding);
+
+2, delete the element in the exisiting array:
+---------------------------------------------
+  1,pop()//it is delete the element at the end of an array.
+    //pop():
+    --------
+     var cricket=["raina","sachin","kohli"];
+     var delete=cricket.pop();
+     console.log(delete);
+
+  2,shift()//it is delete the element at starting of an array.
+    //shift():
+    --------
+    var cricket=["raian","sachin","kohli"];
+   var name= cricket.shift();
+    console.log(name);
+3, given element present in the array or not:
+   ----------------------------------------- 
+  includes()//it is used to check the element present in the array.
+
+  //includes():
+  -------------
+  var cricket=["raian","sachin","kohli"];
+  var name=cricket.includes("sachin");
+  console.log(name);
+4,find position of the element:
+-------------------------------
+indexOf()//it is used to find position of the element in the array.
+//indexOf():
+-------------
+var user=["ganesh","mani","suresh"];
+var name=user.indexOf("mani");
+console.log(name);
+  
+
 
