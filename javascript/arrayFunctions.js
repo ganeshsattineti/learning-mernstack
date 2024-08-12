@@ -82,13 +82,33 @@ var bestFriend=friend.map((friends,index)=>{
 console.log(bestFriend);
 
 //using filter method:
-var number=[1,2,3,4,5,6,7,8];
-var evenOrOdd= number.filter((item)=>{
+var number=[10,13,15,22,19,67,65,64];
+var even= number.filter((item)=>{
 
 
  return item%2===0
  // console.log("this is arrow function");
-}
+});
+console.log(even);
+//example of filter method
+var students=[
+  {name:'ganesh', grade:70},
+  {name:'prasad', grade:75},
+  {name:'suresh', grade:75},
+  {name:'mani', grade:80},
+  {name:'nani', grade:90},
+  {name:'subbu', grade:85}
+];
+var meritStudents=students.filter(function (student){
+  return student.grade>70;
+});
+console.log(meritStudents);
  
-);
-console.log(evenOrOdd);
+//example of lastIndexOf method
+var arr=[10,20,40,10,50,10,30,60];
+var findindex=arr.lastIndexOf(10);
+console.log(findindex);
+
+  
+
+ 
