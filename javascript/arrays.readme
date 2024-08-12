@@ -191,6 +191,22 @@ var meritStudents=students.filter((student)=>
 });
 console.log(meritStudents);
 
+//lastIndexOf()
+---------------
+In javascript lastIndexOf is used for finding the given element last in the array.
+syntax:
+------
+<arrayname>.lastIndexOf(element);
+example of lastIndexOf method:
+------------------------------
+var arr = [10, 20, 40, 10, 50, 10, 90];
+
+//find the index number of element 10
+
+var indexNumber = arr.lastIndexOf(10); // 0 or 4
+
+console.log(indexNumber);
+
 
 
 
