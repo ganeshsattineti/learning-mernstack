@@ -191,7 +191,7 @@ var meritStudents=students.filter((student)=>
 });
 console.log(meritStudents);
 
-//lastIndexOf()
+10,lastIndexOf()
 ---------------
 In javascript lastIndexOf is used for finding the given element last in the array.
 syntax:
@@ -205,8 +205,25 @@ var arr = [10, 20, 40, 10, 50, 10, 90];
 
 var indexNumber = arr.lastIndexOf(10); // 0 or 4
 
-console.log(indexNumber);
+console.log(indexNumber); 
 
+11, flat():
+-----------
+In javascript using flat method creates a new array with all sub arry element concatenated into it 
+recursively up to the specified length.
+syntax:
+-------
+<arrayName>.falt();
+<arrayName>.falt(depth);
+<arrayName>.falt(Infinity);
+
+//using flat method
+  var ar=[0,1,[2,[3,[4,5]]]];
+  var flatMethod=ar.flat(Infinity);
+  // console.log(ar);
+  console.log(flatMethod);
+
+ 
 
 
 
