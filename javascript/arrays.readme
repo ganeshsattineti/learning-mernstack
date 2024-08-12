@@ -83,5 +83,114 @@ var user=["ganesh","mani","suresh"];
 var name=user.indexOf("mani");
 console.log(name);
 
+5,using slice method :
+--------------------
+ slice method is using to array instances of a shallow copy of portion of an array into new new array.
+ it is used to access part of an array.
+
+ //slice();
+ ----------
+ var no =[101,102,103,104,105];
+ var sliceNo=no.slice(1,0);
+ console.log(sliceNo);
+
+ 6,using splice method:
+ ----------------------
+ splice method is used to add, retrieve and replace data.
+
+ //splice method:
+ ---------------
+ //using splice method
+  var no=[101,103,104,105,106];
+  //adding element
+  no.splice(1,0,102);
+  console.log(no);
+  //deleting element
+  var delNo= no.splice(1,1);
+  console.log(delNo);
+  console.log(no);
+  //replace the element 
+  no.splice(1,1,202);
+  console.log(no);
+
+  how to access the elements in the array
+  ---------------------------------------
+  access the elements in the array using [] square brackets.
+  //accessing elements in th array
+    var use=[101,102,103,104,105];
+    console.log(use[2]);
+7,using forEach() method:
+-------------------------
+it is used to get access of each and every element of the array.
+syntax:
+------
+<arrayName>.forEach(function(element,index)
+{
+
+})
+
+//forEach():
+-----------
+//using forEach method
+var users=["yash","siddharth","yukti","sameer","ziya"];
+var user=users.forEach(function (item,index){
+    console.log(index+1,item+" naidu");
+    });
+8, using map method:
+--------------------
+ it is used to access each element of the array and do something on it.
+ it is used to return the result of the action in the new array.
+  syntax:
+  -------
+  var name= <arrayname>.map((element)=>{
+    return element;
+ 
+  })
+  
+  //using map method:
+  -------------------
+var friend=["ganesh","prasad","nani","subbu"];
+var bestFriend=friend.map((friends,index)=>{
+  return {friends,index}; 
+});
+console.log(bestFriend);
+
+//how to find length of an element
+----------------------------------
+In javascript to find the lenght of an array using length method.
+syntax:
+------
+<arrayName>.lenght;
+
+//using length method
+---------------------
+var ids = [100, 300, 400, 500, 600, 8, 9, 76, 23, 43];
+
+var numberOfElements = ids.length;
+console.log(numberOfElements);
+
+9, using filter method:
+---------------------
+In javascript the filter method is using create a new array that all elements pass the test implemented provided function.
+syntax:
+-------
+<arrayName>.filter();
+
+//Example of using filter method:
+var students=[
+  {name:'ganesh',grade:70},
+  {name:'mani',grade:65},
+  {name:'prasad',grade:75},
+  {name:'suresh',grade:80},
+  {name:'nani',grade:85},
+  {name:'subbu',grade:90}
+];
+var meritStudents=students.filter((student)=>
+{
+  return student.grade>75;
+});
+console.log(meritStudents);
+
+
 
 
