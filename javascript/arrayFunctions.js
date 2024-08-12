@@ -77,7 +77,7 @@ console.log(use[2]);
 //using map method:
 var friend=["ganesh","prasad","nani","subbu"];
 var bestFriend=friend.map((friends,index)=>{
-  return {friends,index}; 
+  return friends
 });
 console.log(bestFriend);
 
@@ -109,6 +109,10 @@ var arr=[10,20,40,10,50,10,30,60];
 var findindex=arr.lastIndexOf(10);
 console.log(findindex);
 
-  
+  //using flat method
+  var ar=[0,1,[2,[3,[4,5]]]];
+  var flatMethod=ar.flat(Infinity);
+  // console.log(ar);
+  console.log(flatMethod);
 
  
