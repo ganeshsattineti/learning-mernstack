@@ -1,0 +1,21 @@
+//comparision operators
+var x=10;
+var y=20;
+var result1= x>y;
+var result2= x<y;
+var result3= x<=y;
+var result4= x>=y;
+var result5= x==y;
+var result6= x===y;
+var result7= x!=y;
+var result8= x!==y;
+
+
+console.log(result1);
+console.log(result2);
+console.log(result3);
+console.log(result4);
+console.log(result5);
+console.log(result6);
+console.log(result7);
+console.log(result8);
