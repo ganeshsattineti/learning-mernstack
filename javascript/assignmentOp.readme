@@ -1,0 +1,41 @@
+//assignment operator
+=,+=,-=,*=,/=,%=,**=
+  Assignment operator in javascript are used in assign a values to the variables.
+  the most common operator in (=). and also some compound operators are used it is perform 
+  some mathematical operations and the result is assign back to the variable.
+  //assignment operator:
+  ---------------------
+
+//('=')
+let x=10;
+
+//('+=')
+let a=10;
+a+=10;
+console.log(a);//20
+
+//('-=')
+let y=10;
+y-=5;
+console.log(y);//5
+
+//('*=')
+let m=10;
+m*=6;
+console.log(m);//60
+
+//('/=')
+let z=10;
+z/=2;
+console.log(z);//5
+
+//('%=')
+let b=20;
+b%=5;
+console.log(b);//0
+
+//('**=')
+let c=10;
+c**=2;
+console.log(c);//200
+ 
