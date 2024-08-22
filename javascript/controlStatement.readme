@@ -1,0 +1,69 @@
+control statements:
+-------------------
+Using control staements in js control the flow of execution.
+ex:
+---
+lets you can write some blocks of code you can execute only some blocks u can apply the condition.
+ 
+ in control statements:
+ ----------------------
+ if, else if, if else,switch.
+
+ if statement:
+ -------------
+ syntax:
+ -------
+ if(condition)
+ {
+  statements;
+ }
+
+ ex:
+ ---
+ var x=10;
+ if(x==10)
+ {
+  console.log("it is true");
+ } //is is true
+
+ else if:
+ --------
+ syntax:
+ -------
+  var x=5;
+ if(x==10)
+ {
+  console.log("it is true");
+ } else if(x==5)
+ {
+  console.log("it is true"); //it is true
+ }
+
+ if else:
+ ---------
+ syntax:
+ ------
+ var x=10;
+ if(x==5)
+ {
+  console.log("if x value is correct print x value");
+ }
+ else{
+  console.log("x value is wrong. so then print else block"); 
+ } // x value is wrong. so then print else block
+
+ switch:
+ -------
+ switch is also control statement it can compare a values against case lables.
+ similar to the if blocks but syntax should be difference.
+ syntax:
+ -------
+ switch(expression)
+ {
+  case value1:
+   //code to execute if condition is true
+   break;
+   defualt:
+   //incase does not match any condition print default satement;
+ }
+
