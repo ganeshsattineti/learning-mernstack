@@ -1,0 +1,100 @@
+loop statements:
+----------------
+loop statements are used to execute same statements mulitiple times using loops.
+
+while, do-while, for, for of, for in.
+
+1, while:
+----------
+ The while is used for if the condition is true then excute inside of the code.
+ syntax:
+ -------
+ while(expression)
+ {
+  //statements;
+  increment/decrement;
+ }
+
+ Example:
+ --------
+ let x=1;
+ while(x<=5)
+ {
+  console.log("the x value is", x);
+  x++;
+ }
+
+ do-while:
+ --------
+ do-while is also a same in while bu the difference is it is execues at one time with check condition. after that checks the condition. and syntax also difference.
+
+ syntax:
+ -------
+ do{
+  //statements;
+ }
+ while(condition);
+
+ Example:
+ --------
+ let x=10;
+ do{
+  console.log(x);
+  x++;
+ }
+ while(x<=5);
+
+ for loop:
+ ---------
+ for loop is used for execute same statement in multiple types. but it is more effective then compare to while and do-while.
+ syntax:
+ -------
+ for(initialization;condition;increment/decrement)
+ {
+  //statements;
+ }
+
+ Example:
+ --------
+ for(var i=0;i<=10;i++)
+ {
+  console.log("i value is: ",i);
+ }
+
+for of loop:
+------------
+ In js for of loop is used to loop through the values of an object like arrays,strings.
+ it allows you to access each value directly without having to use an index.
+
+ syntax:
+ -------
+ for(variable of arrayaname)
+ {
+  console.log(varaible);
+ }
+
+ Example:
+ --------
+ var arr=[10,20,30,40,50];
+ for(var value of arr)
+ {
+  console.log(value);
+ }
+
+ for-in loop :
+ ------------
+ for....in loop is used to iterate through the properties of an object.
+ it allows you to iterate over the keys of an object and access the values associated with those keys.
+Example:
+--------
+let obj={
+  name:'ganesh',
+  id:201,
+  city:'bhimavaram'
+};
+for(let key in obj)
+{
+  console.log(key);
+  console.log(obj[key]);
+}
+
