@@ -66,3 +66,4 @@ function func(value)
   
 }
 func(4.5);
+
