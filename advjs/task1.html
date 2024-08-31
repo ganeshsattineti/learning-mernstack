@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assisgnment 2</title>
+  <script>
+     function selectOptions()
+     {
+      var heading=document.querySelector('h2');
+      var selectSize=document.querySelectorAll('select');
+      var size=selectSize[0].value;
+      var color=selectSize[1].value;
+      var fontType=selectSize[2].value;
+      heading.style.fontSize=size+'px';
+      heading.style.color=color;
+      heading.style.fontFamily=fontType; 
+     }
+     function reset()
+     {
+      var heading=document.querySelector('h2');
+      heading.style.fontSize='';
+      heading.style.color='';
+      heading.style.fontFamily='';
+      var selectSize=document.querySelectorAll('select');
+      var size=selectSize[0].value='size';
+      var color=selectSize[1].value='color';
+      var fontType=selectSize[2].value='font-family';
+      
+
+     }
+  </script>
+</head>
+<body>
+  <h2> javascript is easy</h2>
+  <select onchange="selectOptions()">
+    <option value="size">size</option>
+    <option value="10">10</option>
+    <option value="20">20</option>
+    <option value="30">30</option>
+    <option value="40">40</option>
+  </select>
+
+  <select onchange="selectOptions()">
+    <option value="color">color</option>
+    <option value="red">red</option>
+    <option value="black">black</option>
+    <option value="green">green</option>
+    <option value="yellow">yellow</option>
+    <option value="blue">blue</option>
+  </select>
+
+  <select onchange="selectOptions()">
+    <option value="font-family">font-family</option>
+    <option value="Arial">Arial</option>
+    <option value="Italic">Italic</option>
+    <option value="Arial Narrow">Arial Narrow</option>
+    <option value="calibiri">calibiri</option>
+  </select>
+  <button onclick="reset()">reset</button>
+</body>
+</html>  
+</body>
+</html>

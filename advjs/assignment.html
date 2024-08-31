@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assisgnment 1</title>
+  <script>
+    
+    
+    function showImage()
+    {
+      
+     var reactImage  = document.querySelector('#react_image');
+     var reactButton=document.querySelector('#reactButton');
+       reactImage.style.display="block";
+    }
+    function showAngular()
+    {
+     
+     var angularImage= document.querySelector('#angular_image'); 
+     var angularButton=document.querySelector('#angularButton'); 
+         angularImage.style.display="block";
+         
+    }
+
+  </script>
+</head>
+<body>
+  <img id="react_image" src="react.jpeg" alt="react image" style="display:none"/>
+  <img id="angular_image" src="angular.jpeg" alt="angular image" style="display:none"/>
+  <button id="reactButton" onclick="showImage()">React</button>
+  <button id="angularButton" onclick="showAngular()">Angular</button>
+</body>
+</html>

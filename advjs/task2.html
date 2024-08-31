@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <style>
+    img{
+      display:none;
+    }
+  </style> -->
+  <script>
+    
+    function reactImage()
+    { 
+      var showImage=document.querySelectorAll('img');
+      var reactButton=document.querySelectorAll('button');
+      if(showImage[0].style.display==='none')
+    {
+      showImage[0].style.display="block";
+      showImage[1].style.display="none"
+      
+      reactButton[0].innerText="HideReactImg";
+    }
+    else{
+      
+      showImage[0].style.display="none";
+      reactButton[0].innerText="ShowReactImg"
+    }
+    }
+    function angularImg()
+    {
+      var showImage=document.querySelectorAll('img');
+      var reactButton=document.querySelectorAll('button');
+      if(showImage[1].style.display==='none')
+      {
+      showImage[0].style.display="none";
+      showImage[1].style.display="block";
+      
+      reactButton[1].innerText="HideAngularImg";
+    }
+      
+      else{
+        showImage[1].style.display="none";
+        reactButton[1].innerText="HideAngularReactImg"
+    }
+      
+    }
+  </script>
+</head>
+<body>
+  <img src="images/react.jpeg" alt="react image" style="display:none" />
+  <img src="images/angular.jpeg" alt="angular img"style="display:none" />
+  <button onclick="reactImage()" >ShowReactImg</button>
+  
+  <button onclick="angularImg()">ShowAngularImg</button>
+</body>
+</html>
