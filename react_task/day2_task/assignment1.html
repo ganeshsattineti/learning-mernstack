@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <link rel="styleSheet" href="./assignment1.css"
+  </head>
+  <body>
+    <script>
+      let logoElement = React.createElement("h2", { id: "logo" }, "GANESH S");
+      let divLogoElement = React.createElement(
+        "div",
+        { id: "logoDiv" },
+        logoElement
+      );
+
+      let anchorElement1 = React.createElement("a", { href: "#" }, "Home");
+      let anchorElement2 = React.createElement(
+        "a",
+        { href: "#" },
+        "Electronics"
+      );
+      let anchorElement3 = React.createElement("a", { href: "#" }, "Jewelery");
+      let anchorElement4 = React.createElement("a", { href: "#" }, "Mens");
+      let anchorElement5 = React.createElement("a", { href: "#" }, "Womens");
+      let anchorElement6 = React.createElement("a", { href: "#" }, "Kids");
+      let navButtonElement = React.createElement(
+        "button",
+        { id: "navButton" },
+        "LogOut"
+      );
+      let buttonDivElement = React.createElement(
+        "div",
+        { id: "buttonDiv" },
+        navButtonElement
+      );
+      let anchorDivElement = React.createElement("div", { id: "anchorDiv" }, [
+        anchorElement1,
+        anchorElement2,
+        anchorElement3,
+        anchorElement4,
+        anchorElement5,
+        anchorElement6,
+      ]);
+
+      let mainDivElement = React.createElement("div", { class: "mainDiv" }, [
+        divLogoElement,
+        anchorDivElement,
+        buttonDivElement,
+      ]);
+
+      let navBarElement = React.createElement(
+        "nav",
+        { class: "navContent" },
+        mainDivElement
+      );
+
+      ReactDOM.render(navBarElement, document.querySelector("body"));
+    </script>
+  </body>
+</html>

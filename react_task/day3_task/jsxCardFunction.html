@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="jsxCardFunction.css" />
+  </head>
+  <body>
+    <div class="root"></div>
+    <script type="text/babel">
+      function createJsxCard() {
+        let mainDivElement = (
+          <div class="cardElement">
+            <img
+              id="cardImage"
+              src="https://m.media-amazon.com/images/M/MV5BODdjNjFlYTctMmY1Yy00YTAxLWFkZjEtNTJlOTk3YmY3ZDJjXkEyXkFqcGc@._V1_.jpg"
+            />
+            <h2>Ganesh s</h2>
+            <p>Hi iam ganesh iam a frontend developer</p>
+            <button id="cardButton">Login</button>
+          </div>
+        );
+        return mainDivElement;
+      }
+      ReactDOM.render(
+        [createJsxCard(), createJsxCard(), createJsxCard()],
+        document.querySelector(".root")
+      );
+    </script>
+  </body>
+</html>

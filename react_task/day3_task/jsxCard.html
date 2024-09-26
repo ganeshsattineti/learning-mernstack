@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="jsxCard.css" />
+  </head>
+  <body>
+    <script type="text/babel">
+      let createCard = (
+        <div class="card">
+          <div class="cardDetails">
+            <img
+              id="cardImage"
+              src="https://m.media-amazon.com/images/M/MV5BODdjNjFlYTctMmY1Yy00YTAxLWFkZjEtNTJlOTk3YmY3ZDJjXkEyXkFqcGc@._V1_.jpg"
+            />
+            <h2>Pawankalyan k</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <button id="loginButton">LOGIN</button>
+          </div>
+        </div>
+      );
+      ReactDOM.render(createCard, document.querySelector("body"));
+    </script>
+  </body>
+</html>

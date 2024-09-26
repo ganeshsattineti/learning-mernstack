@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <script>
+      // var liElement = React.createElement("li", null, "one");
+      // var olElement = React.createElement("ol", null, liElement);
+      // ReactDOM.render(olElement, document.querySelector("body"));
+
+      // ReactDOM.render(liElement, document.querySelector("olElement"));
+      var olElement = React.createElement("ol", null);
+      var li1Element = React.createElement("li", null, "apple");
+      ReactDOM.render(olElement, document.querySelector("body"));
+      ReactDOM.render(li1Element, document.querySelector("ol"));
+    </script>
+  </body>
+</html>

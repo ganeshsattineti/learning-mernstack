@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <link rel="stylesheet" href="card.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      function createCard(url, name) {
+        let imageElement = React.createElement("img", {
+          src: url, //"https://i.pinimg.com/736x/95/ee/97/95ee97eebcec23fd70e380cd81616d82.jpg",
+          id: "imageElement",
+        });
+        let h2Element = React.createElement("h1", null, name);
+        let paraElement = React.createElement(
+          "p",
+          null,
+          "I am a software developer"
+        );
+        let buttonElement = React.createElement(
+          "button",
+          { id: "buttonElement" },
+          "LOGIN"
+        );
+        let divReactElement1 = React.createElement(
+          "div",
+          { className: "divReactElement1" },
+          imageElement,
+          h2Element,
+          paraElement,
+          buttonElement
+        );
+        return divReactElement1;
+      }
+      let divReactElement = React.createElement(
+        "div",
+        {
+          className: "divReactElement2",
+        },
+        [
+          createCard(
+            "https://i.pinimg.com/736x/95/ee/97/95ee97eebcec23fd70e380cd81616d82.jpg",
+            "Ganesh s"
+          ),
+          createCard(
+            "https://m.media-amazon.com/images/M/MV5BODdjNjFlYTctMmY1Yy00YTAxLWFkZjEtNTJlOTk3YmY3ZDJjXkEyXkFqcGc@._V1_.jpg",
+            "Suresh y"
+          ),
+        ]
+      );
+
+      ReactDOM.render(divReactElement, document.querySelector("#root"));
+    </script>
+  </body>
+</html>

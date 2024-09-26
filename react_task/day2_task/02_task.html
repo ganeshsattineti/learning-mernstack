@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      let paraElement = React.createElement(
+        "p",
+        null,
+        "this is paragraph element"
+      );
+      let h2ReactElement = React.createElement(
+        "h2",
+        null,
+        "this is h2 heading element"
+      );
+      let divReactElement = React.createElement("div", null, [
+        paraElement,
+        h2ReactElement,
+      ]);
+      ReactDOM.render(divReactElement, document.querySelector("#root"));
+    </script>
+  </body>
+</html>

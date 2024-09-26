@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <link rel="stylesheet" href="./card.css" />
+  </head>
+  <body>
+    <script>
+      let imageDivElement = React.createElement("img", {
+        src: "https://m.media-amazon.com/images/M/MV5BODdjNjFlYTctMmY1Yy00YTAxLWFkZjEtNTJlOTk3YmY3ZDJjXkEyXkFqcGc@._V1_.jpg",
+        height: "250",
+        width: "200",
+        id: "imageElement",
+      });
+      let headingElement = React.createElement(
+        "h2",
+        { id: "headingElement" },
+        "PawanKalyan"
+      );
+      let paraElement = React.createElement(
+        "p",
+        { id: "paraElement" },
+        " Actor and Politician"
+      );
+      let buttonElement = React.createElement(
+        "button",
+        { id: "buttonDiv" },
+        "LOGIN"
+      );
+      let cardDivElement = React.createElement("div", { class: "cardDiv" }, [
+        imageDivElement,
+        headingElement,
+        paraElement,
+        buttonElement,
+      ]);
+      ReactDOM.render(cardDivElement, document.querySelector("body"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+#cardImage {
+  height: 250px;
+  width: 200px;
+  border-radius: 3px;
+}
+.cardDetails {
+  border: none;
+  text-align: center;
+  width: 20%;
+  transform: translate(550px, 100px);
+  padding: 30px;
+  background-color: rgb(64, 235, 178);
+  box-shadow: 5px 5px 10px 10px rgb(10, 49, 92);
+  border-radius: 10px;
+}
+#loginButton {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 3px;
+}

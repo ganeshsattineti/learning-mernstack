@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <script>
+      var divElement = React.createElement(
+        "div",
+        null,
+        "this is division element"
+      );
+      var paraElement = React.createElement(
+        "p",
+        null,
+        "this is pargraph element"
+      );
+      var headingElement = React.createElement(
+        "h1",
+        null,
+        "this is heading element"
+      );
+      ReactDOM.render(
+        [divElement, paraElement, headingElement],
+        document.querySelector("body")
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js  "></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      let imageReactElement = React.createElement("img", {
+        src: "https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_1280.jpg",
+        height: "300",
+        width: "300",
+      });
+      ReactDOM.render(imageReactElement, document.querySelector("#root"));
+    </script>
+  </body>
+</html>

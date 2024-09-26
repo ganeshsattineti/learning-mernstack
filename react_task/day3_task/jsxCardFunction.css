@@ -1,0 +1,24 @@
+#cardImage {
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cardElement {
+  width: 20%;
+  background-color: rgb(51, 225, 167);
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+#cardButton {
+  padding: 7px 25px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.root {
+  display: flex;
+  justify-content: space-evenly;
+}
